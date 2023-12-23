@@ -8,22 +8,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" перекрестное происхождение>
     <link href="https://fonts.googleapis.com/css2?family=Открыть+ Sans&family=Освальд:wght@400;500;700 &display=swap"
         rel="таблица стилей">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>-->
     <link rel="stylesheet" type="text/css" href="css/style.css" <title>Сайт IT доктор</title>
 </head>
 
 <body>
+    <ul id="slide-out" class="sidenav">
+        <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
+        <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
+        <li><a href="#!"><i class="material-icons">grade</i>Услуги</a></li>
+        <li><a href="#!"><i class="material-icons">phone</i>Контакты</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Закрыть</a></li>
+    </ul>
+   
     <header class="header">
         <div class="container">
             <div class="header_title">
                 <img src="img/logo.svg" alt="logo" class="logo">
-                <button class="burger">
+                <a class="burger sidenav-trigger" data-target="slide-out">
                     <span class="burger_line"></span>
                     <span class="burger_line"></span>
                     <span class="burger_line"></span>
-                </button>
+                </a>
             </div>
             <h1 class="h1">Реализуем крупнейшие проекты в России</h1>
-            <h4 class="h4">Cтадионы, газопроводы, мосты, дамбы</h4>
+            <h4 class="h4">Стадионы, газопроводы, мосты, дамбы</h4>
         </div>
     </header>
     <section class="about">
@@ -79,6 +92,16 @@
                 </div>
             </div>
         </div>
+        
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Заголовок окна</h4>
+      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. </p>
+    </div>
+    
+       
+  </div>
         <div class="request">
             <div class="container">
                 <div class="request_flex">
@@ -87,10 +110,10 @@
                         <h5 class="request_h5">РЕАЛИЗУЕМ САМЫЕ СМЕЛЫЕ РЕШЕНИЯ В РОССИИ!</h5>
                     </div>
                     <div class="request_flex-right">
-                        <button class="request_btn">
+                        <a class="request_btn modal-trigger" href="#modal1">
                             <img src="img/icon.svg" alt="icon" class="request_icon">
                             ВАШ ЗАПРОС
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -130,28 +153,28 @@
     <section class="portfolio">
         <div class="portfolio_grid">
             <div class="portfolio_grid-item">
-                <img class="portfolio_img" src="img/Portfolio_item.jpg" alt="Portfolio_item">
+                <img class="portfolio_img materialboxed" src="img/Portfolio_item.jpg" alt="Portfolio_item">
             </div>
             <div class="portfolio_grid-item">
-                <img class="portfolio_img" src="img/Portfolio_item.jpg" alt="Portfolio_item">
+                <img class="portfolio_img materialboxed" src="img/Portfolio_item.jpg" alt="Portfolio_item">
             </div>
             <div class="portfolio_grid-item">
-                <img class="portfolio_img" src="img/Portfolio_item.jpg" alt="Portfolio_item">
+                <img class="portfolio_img materialboxed" src="img/Portfolio_item.jpg" alt="Portfolio_item">
             </div>
             <div class="portfolio_grid-item">
-                <img class="portfolio_img" src="img/Portfolio_item.jpg" alt="Portfolio_item">
+                <img class="portfolio_img materialboxed" src="img/Portfolio_item.jpg" alt="Portfolio_item">
             </div>
             <div class="portfolio_grid-item">
-                <img class="portfolio_img" src="img/Portfolio_item.jpg" alt="Portfolio_item">
+                <img class="portfolio_img materialboxed" src="img/Portfolio_item.jpg" alt="Portfolio_item">
             </div>
             <div class="portfolio_grid-item">
-                <img class="portfolio_img" src="img/Portfolio_item.jpg" alt="Portfolio_item">
+                <img class="portfolio_img materialboxed" src="img/Portfolio_item.jpg" alt="Portfolio_item">
             </div>
             <div class="portfolio_grid-item">
-                <img class="portfolio_img" src="img/Portfolio_item.jpg" alt="Portfolio_item">
+                <img class="portfolio_img materialboxed" src="img/Portfolio_item.jpg" alt="Portfolio_item">
             </div>
             <div class="portfolio_grid-item">
-                <img class="portfolio_img" src="img/Portfolio_item.jpg" alt="Portfolio_item">
+                <img class="portfolio_img materialboxed" src="img/Portfolio_item.jpg" alt="Portfolio_item">
             </div>
         </div>
     </section>
@@ -261,10 +284,10 @@
                         <h5 class="request_h5">Оставьте заявку и мы свяжемся с Вами!</h5>
                     </div>
                     <div class="request_flex-right">
-                        <button class="request_btn">
+                        <a class="request_btn modal-trigger" href="#modal1">
                             <img src="img/icon.svg" alt="icon" class="request_icon">
-                            Ваш запрос
-                        </button>
+                            ВАШ ЗАПРОС
+                        </a>
                     </div>
                 </div>
             </div>
@@ -284,9 +307,9 @@
                     <h3 class="text-h3 contacts_h3 contacts_h3-grey">Телефон</h3>
                     <h3 class="text-h3 contacts_h3">
                         <a href="tel:+78121112233">8(812)111-22-33</a>
-                        <br> 
-                    <a href="tel:+78121112233">8(812)111-22-33</a>
-                </h3>
+                        <br>
+                        <a href="tel:+78121112233">8(812)111-22-33</a>
+                    </h3>
                 </div>
                 <div class="contacts_item">
                     <img class="contacts_icon" src="img/clok.svg" alt="clok">
@@ -310,6 +333,8 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
